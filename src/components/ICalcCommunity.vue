@@ -1,38 +1,30 @@
 <template>
   <div class="Icalc">
-    <div class="display"> {{current || '0'}}</div>
-    <div @click="clear" class="btn"> C</div>
-    <div @click="sign" class="btn"> +/-</div>
-    <div @click="mod" class="btn"> %</div>
-    <div @click="divide" class="btn operator"> ÷</div>
-    <div @click="append('7')" class="btn"> 7</div>
-    <div @click="append('8')" class="btn"> 8</div>
-    <div @click="append('9')" class="btn"> 9</div>
-    <div @click="times" class="btn operator"> X</div>
-    <div @click="append('4')" class="btn"> 4</div>
-    <div @click="append('5')" class="btn"> 5</div>
-    <div @click="append('6')" class="btn"> 6</div>
-    <div @click="minus" class="btn operator"> -</div>
-    <div @click="append('1')" class="btn"> 1</div>
-    <div @click="append('2')" class="btn"> 2</div>
-    <div @click="append('3')" class="btn"> 3</div>
-    <div @click="add" class="btn operator"> +</div>
-    <div @click="append('0')" class="btn zero"> 0</div>
-    <div @click="dot" class="btn"> .</div>
-    <div @click="equal" class="btn operator"> =</div>
+    <div class="display"> <div class="visible_element"> {{current || '0'}}</div> </div>
+    <div @click="clear" class="btn"> <div class="visible_element"> C </div></div>
+    <div @click="sign" class="btn"> <div class="visible_element"> +/- </div></div>
+    <div @click="mod" class="btn"> <div class="visible_element"> % </div></div>
+    <div @click="divide" class="btn operator"> <div class="visible_element"> ÷</div></div>
+    <div @click="append('7')" class="btn"> <div class="visible_element"> 7 </div></div>
+    <div @click="append('8')" class="btn"> <div class="visible_element"> 8 </div></div>
+    <div @click="append('9')" class="btn"> <div class="visible_element"> 9 </div></div>
+    <div @click="times" class="btn operator"> <div class="visible_element"> *</div></div>
+    <div @click="append('4')" class="btn"> <div class="visible_element"> 4 </div></div>
+    <div @click="append('5')" class="btn"> <div class="visible_element"> 5 </div></div>
+    <div @click="append('6')" class="btn"> <div class="visible_element"> 6 </div></div>
+    <div @click="minus" class="btn operator"> <div class="visible_element"> - </div></div>
+    <div @click="append('1')" class="btn"> <div class="visible_element"> 1 </div></div>
+    <div @click="append('2')" class="btn"> <div class="visible_element"> 2 </div></div>
+    <div @click="append('3')" class="btn"> <div class="visible_element"> 3 </div></div>
+    <div @click="add" class="btn operator"> <div class="visible_element"> +</div></div>
+    <div @click="append('0')" class="btn zero"> <div class="visible_element"> 0</div></div>
+    <div @click="dot" class="btn"> <div class="visible_element"> . </div></div>
+    <div @click="equal" class="btn operator"> <div class="visible_element"> =</div></div>
   </div>
 </template>
 
 <script>
 export default {
-  /* document.keypress(function(){
-    if(event.which == 46){
-      this.methods.append('.');
-    }
-    else if (event.which == 45){
-      this.method.append('0');
-    }
-  }, */
   data() {
     return {
       previous: null,
@@ -91,6 +83,9 @@ export default {
         parseFloat(this.current)
       )}`;
       this.previous = null;
+    },
+    squack: function(text){
+      this.append(text)
     }
   }
 }
@@ -101,33 +96,45 @@ export default {
 .Icalc {
   width: 320px;
   height: 534px;
-  font-size: 32px;
+  font-size: 30px;
   display: grid; /* Właczenie siatki */
-  grid-template-columns: repeat(4); /* Ustawienie siatki na cztery kolumny */
+  grid-template-columns: repeat(4, auto); /* Ustawienie siatki na cztery kolumny */
+  grid-template-rows: repeat(6, 89px);
+
+  z-index: 0;
 }
 
 .display {
   grid-column: 1 / 5;
   text-align: right;
-  background-color: #9dcbd6;
+  background-color: #cbe6ec;
+}
+.display .visible_element {
+  padding-right: 22px;
 }
 
 .btn {
   background-color: #536570;
-  border: 1px solid #354149;
+  border: 1px solid #242c31;
   cursor: pointer;
 }
-.btn.active {
+.btn :active {
   /*transform: scale(0.5); */
-  background-color: #151a1d;
+  transform: scale(0.9);
 }
 
 .operator {
-  background-color: rgba(255, 60, 0, 0.918);
+  background-color: #cbe6ec;
+  border: none;
 }
 
 .zero {
   grid-column: 1/3;
+}
+
+.visible_element {
+  padding-top: 30px;
+  z-index: 1;
 }
 
 </style>
