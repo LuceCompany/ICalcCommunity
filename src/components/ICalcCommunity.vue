@@ -1,9 +1,9 @@
 <template>
   <div class="Icalc">
     <div class="display"> <div class="visible_element"> {{current || '0'}}</div> </div>
-    <div @click="clear" class="btn"> <div class="visible_element"> C </div></div>
-    <div @click="sign" class="btn"> <div class="visible_element"> +/- </div></div>
-    <div @click="mod" class="btn"> <div class="visible_element"> % </div></div>
+    <div @click="clear" class="btn operator"> <div class="visible_element"> C </div></div>
+    <div @click="sign" class="btn operator"> <div class="visible_element"> +/- </div></div>
+    <div @click="mod" class="btn operator"> <div class="visible_element"> % </div></div>
     <div @click="divide" class="btn operator"> <div class="visible_element"> ÷</div></div>
     <div @click="append('7')" class="btn"> <div class="visible_element"> 7 </div></div>
     <div @click="append('8')" class="btn"> <div class="visible_element"> 8 </div></div>
@@ -100,31 +100,35 @@ export default {
   display: grid; /* Właczenie siatki */
   grid-template-columns: repeat(4, auto); /* Ustawienie siatki na cztery kolumny */
   grid-template-rows: repeat(6, 89px);
-
+  
+  /*filter:blur(4px);   -> Add blur Efect 
+  -webkit-filter: blur(4px); */
+  background-color: #96c5cfd8;
   z-index: 0;
 }
 
 .display {
   grid-column: 1 / 5;
   text-align: right;
-  background-color: #cbe6ec;
+  background-color: rgba(166, 214, 241, 0.911);
 }
 .display .visible_element {
-  padding-right: 22px;
+  position: absolute;
+  right: 5%;
+  z-index: 2;
 }
 
 .btn {
-  background-color: #536570;
-  border: 1px solid #242c31;
+  background-color: #465264e5;
+  border: 1px solid #27243173;
   cursor: pointer;
 }
 .btn :active {
-  /*transform: scale(0.5); */
   transform: scale(0.9);
 }
 
 .operator {
-  background-color: #cbe6ec;
+  background-color: #9cbec7b4;
   border: none;
 }
 
@@ -134,7 +138,7 @@ export default {
 
 .visible_element {
   padding-top: 30px;
-  z-index: 1;
+  z-index: 2;
 }
 
 </style>
