@@ -4,7 +4,7 @@
     <div class="display">
       <div class="visible_element"> {{current || '0'}} </div> 
     </div>
-
+    
     <div class="top_operator">
       <div @click="clear" class="btn"><div class="visible_element"> C </div></div>
       <div @click="sign" class="btn"> <div class="visible_element"> +/- </div></div>
