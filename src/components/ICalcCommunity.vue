@@ -6,31 +6,31 @@
     </div>
     
     <div class="top_operator">
-      <div @click="clear" class="btn"><div class="visible_element"> C </div></div>
-      <div @click="sign" class="btn"> <div class="visible_element"> +/- </div></div>
-      <div @click="mod" class="btn"> <div class="visible_element"> % </div></div>
-      <div @click="divide" class="btn"> <div class="visible_element"> ÷</div></div>
+      <button @click="clear" class="btn"><div class="visible_element"> C </div></button>
+      <button @click="sign" class="btn"> <div class="visible_element"> +/- </div></button>
+      <button @click="mod" class="btn"> <div class="visible_element"> % </div></button>
+      <button @click="divide" class="btn"> <div class="visible_element"> ÷</div></button>
     </div>
 
     <div class="right_operator">
-      <div @click="times" class="btn"> <div class="visible_element"> *</div></div>
-      <div @click="minus" class="btn"> <div class="visible_element"> - </div></div>
-      <div @click="add" class="btn"> <div class="visible_element"> +</div></div>
-      <div @click="equal" class="btn"> <div class="visible_element"> =</div></div>
+      <button @click="times" class="btn"> <div class="visible_element"> *</div></button>
+      <button @click="minus" class="btn"> <div class="visible_element"> - </div></button>
+      <button @click="add" class="btn"> <div class="visible_element"> +</div></button>
+      <button @click="equal" class="btn"> <div class="visible_element"> =</div></button>
     </div>
 
     <div class="button">
-      <div @click="append('7')" class="btn"> <div class="visible_element"> 7 </div></div>
-      <div @click="append('8')" class="btn"> <div class="visible_element"> 8 </div></div>
-      <div @click="append('9')" class="btn"> <div class="visible_element"> 9 </div></div>
-      <div @click="append('4')" class="btn"> <div class="visible_element"> 4 </div></div>
-      <div @click="append('5')" class="btn"> <div class="visible_element"> 5 </div></div>
-      <div @click="append('6')" class="btn"> <div class="visible_element"> 6 </div></div>
-      <div @click="append('1')" class="btn"> <div class="visible_element"> 1 </div></div>
-      <div @click="append('2')" class="btn"> <div class="visible_element"> 2 </div></div>
-      <div @click="append('3')" class="btn"> <div class="visible_element"> 3 </div></div>
-      <div @click="append('0')" class="btn zero"> <div class="visible_element"> 0</div></div>
-      <div @click="dot" class="btn"> <div class="visible_element"> . </div></div>
+      <button @click="append('7')" class="btn"> <div class="visible_element"> 7 </div></button>
+      <button @click="append('8')" class="btn"> <div class="visible_element"> 8 </div></button>
+      <button @click="append('9')" class="btn"> <div class="visible_element"> 9 </div></button>
+      <button @click="append('4')" class="btn"> <div class="visible_element"> 4 </div></button>
+      <button @click="append('5')" class="btn"> <div class="visible_element"> 5 </div></button>
+      <button @click="append('6')" class="btn"> <div class="visible_element"> 6 </div></button>
+      <button @click="append('1')" class="btn"> <div class="visible_element"> 1 </div></button>
+      <button @click="append('2')" class="btn"> <div class="visible_element"> 2 </div></button>
+      <button @click="append('3')" class="btn"> <div class="visible_element"> 3 </div></button>
+      <button @click="append('0')" class="btn zero"> <div class="visible_element"> 0</div></button>
+      <button @click="dot" class="btn"> <div class="visible_element"> . </div></button>
     </div>
     
   </div>
