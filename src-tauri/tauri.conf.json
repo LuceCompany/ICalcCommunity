@@ -34,7 +34,9 @@
       "exceptionDomain": ""
     },
     "allowlist": {
-      "all": false
+      "all": false,
+      "event": true,
+      "notification": true
     },
     "window": {
       "title": " ",
