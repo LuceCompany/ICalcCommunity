@@ -1,4 +1,4 @@
-# icalccommunity
+# icalccommunity - building simple test app in tauri cross platform framework
 
 ## Project setup
 ```
@@ -19,6 +19,3 @@ yarn tauri:build
 ```
 yarn lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
