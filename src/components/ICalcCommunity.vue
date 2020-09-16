@@ -1,7 +1,13 @@
 <template>
   <div class="Icalc">
 
-    <div class="display"> <!-- To repair -->
+    <div class="menu" id="menu">
+      <button class="left_nav"><i class="nav_icon">&#xe800;</i></button>
+      <button class="center_nav"><i class="nav_icon">&#xe801;</i></button>
+      <button class="right_nav"><i class="nav_icon">&#xe802;</i></button>
+    </div>
+
+    <div class="display">
       <button v-on:keydown="numadd" class="visible_element"> {{current || '0'}} </button> 
     </div>
     
@@ -165,5 +171,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@import "static/nav_bar.css";
 @import "static/style.css";
 </style>

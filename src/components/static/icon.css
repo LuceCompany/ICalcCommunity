@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('./font/fontello.ttf?54071625') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.nav_icon
+    {
+      font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      text-align: center;
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
