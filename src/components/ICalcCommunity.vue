@@ -14,14 +14,14 @@
     <div class="top_operator">
       <button @click="clear" class="btn">C </button>
       <button @click="sign" class="btn"> +/- </button>
-      <button @click="mod" class="btn"> % </button>
-      <button @click="divide" class="btn"> ÷ </button>
+      <button @click="append('%')" class="btn"> % </button>
+      <button @click="append('/')" class="btn"> ÷ </button>
     </div>
 
     <div class="right_operator">
-      <button @click="times" class="btn"> * </button>
-      <button @click="minus" class="btn"> - </button>
-      <button @click="add" class="btn"> + </button>
+      <button @click="append('*')" class="btn"> * </button>
+      <button @click="append('-')" class="btn"> - </button>
+      <button @click="append('+')" class="btn"> + </button>
       <button @click="equal" class="btn"> = </button>
     </div>
 
@@ -68,10 +68,10 @@ export default {
         this.sign();
       }
       else if(event.key == "%"){
-        this.mod();
+        this.append("%");
       }
       else if(event.key == "/"){
-        this.divide();
+        this.append("/");
       }
       else if(event.key == "7"){
         this.append("7");
@@ -83,7 +83,7 @@ export default {
         this.append("9");
       }
       else if(event.key == "*"){
-        this.times();
+        this.append("*");
       }
       else if(event.key == "4"){
         this.append("4");
@@ -95,7 +95,7 @@ export default {
         this.append("6");
       }
       else if(event.key == "-"){
-        this.minus();
+        this.append("-");
       }
       else if(event.key == "1"){
         this.append("1");
@@ -107,7 +107,7 @@ export default {
         this.append("3");
       }
       else if(event.key == "+"){
-        this.add();
+        this.append("+");
       }
       else if(event.key == "0"){
         this.append("0");
@@ -119,47 +119,20 @@ export default {
         this.equal();
       }
     },
-    append(number) {
+    append(varible) {
       if (this.operatorClicked) {
         this.current = '';
         this.operatorClicked = false;
       }
-      this.current = `${this.current}${number}`;
+      this.current = `${this.current}${varible}`;
     },
     dot() {
       if (this.current.indexOf('.') === -1) {
         this.append('.');
       }
     },
-    setPrevious(){
-      this.previous = this.current;
-      this.operatorClicked = true;
-    },
-    mod() {
-      this.operator = (a, b) => a % b;
-      this.setPrevious();
-    },
-    divide() {
-      this.operator = (a, b) => a / b;
-      this.setPrevious();
-    },
-    times(){
-      this.operator = (a, b) => a * b;
-      this.setPrevious();
-    },
-    minus() {
-      this.operator = (a, b) => a - b;
-      this.setPrevious();
-    },
-    add() {
-      this.operator = (a, b) => a + b;
-      this.setPrevious();
-    },
     equal() {
-      this.current =  `${this.operator(
-        parseFloat(this.previous),
-        parseFloat(this.current)
-      )}`;
+      this.current = eval(this.current);
       this.previous = null;
     },
     squack: function(text){
