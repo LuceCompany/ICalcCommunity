@@ -132,7 +132,7 @@ export default {
       }
     },
     equal() {
-      this.current = eval(this.current);
+      this.current = eval(this.current).toFixed(2);
       this.previous = null;
     },
     squack: function(text){
