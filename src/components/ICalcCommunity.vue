@@ -61,8 +61,11 @@ export default {
         this.current.slice(1) : `-${this.current}`;
     },
     numadd: function(event) {
-      if(event.key == "Delete" || event.key == "Backspace"){
+      if(event.key == "Delete"){
         this.clear();
+      }
+      else if(event.key == "Backspace") {
+        this.current = this.current.slice(0, -1);
       }
       else if(event.key == "s"){
         this.sign();

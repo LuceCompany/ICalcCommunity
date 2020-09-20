@@ -20,11 +20,11 @@
       "externalBin": [],
       "copyright": "LuceCompany",
       "category": "DeveloperTool",
-      "shortDescription": "Simple Calculator",
+      "shortDescription": "Simple system Calculator",
       "longDescription": "First version Calculator `ICalcCommunity` build in next future cros-platform tauri app",
       "deb": {
         "depends": [],
-        "useBootstrapper": true
+        "useBootstrapper": false
       },
       "osx": {
         "frameworks": [],

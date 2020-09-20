@@ -1,9 +1,6 @@
-1) Add Delete lest input char in Backspace
-3) Add more operator for basic mode
-4) Add History  
-
 5) ...... Future  Transparent|Blur|MoreWindow|MoreAdvacedCal
-6) Add advaced Mode 
+6) Add advaced Mode :
+	- Add History 
 7) Build skeleton for window framless Nav_Bar ? Ass top mennu in js | rust and css ass indepednent class
 	|(1)=====(2)=====(3)|
 	|	App	    |		

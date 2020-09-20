@@ -2624,10 +2624,10 @@ cheerio@^0.22.0:
     lodash.reject "^4.4.0"
     lodash.some "^4.4.0"
 
-chokidar@3.4.1:
-  version "3.4.1"
-  resolved "https://registry.npm.taobao.org/chokidar/download/chokidar-3.4.1.tgz?cache=0&sync_timestamp=1596729202672&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fchokidar%2Fdownload%2Fchokidar-3.4.1.tgz#e905bdecf10eaa0a0b1db0c664481cc4cbc22ba1"
-  integrity sha1-6QW97PEOqgoLHbDGZEgcxMvCK6E=
+chokidar@3.4.2, chokidar@^3.4.1:
+  version "3.4.2"
+  resolved "https://registry.npm.taobao.org/chokidar/download/chokidar-3.4.2.tgz?cache=0&sync_timestamp=1596729202672&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fchokidar%2Fdownload%2Fchokidar-3.4.2.tgz#38dc8e658dec3809741eb3ef7bb0a47fe424232d"
+  integrity sha1-ONyOZY3sOAl0HrPve7Ckf+QkIy0=
   dependencies:
     anymatch "~3.1.1"
     braces "~3.0.2"
@@ -2657,21 +2657,6 @@ chokidar@^2.1.8:
     upath "^1.1.1"
   optionalDependencies:
     fsevents "^1.2.7"
-
-chokidar@^3.4.1:
-  version "3.4.2"
-  resolved "https://registry.npm.taobao.org/chokidar/download/chokidar-3.4.2.tgz?cache=0&sync_timestamp=1596729202672&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fchokidar%2Fdownload%2Fchokidar-3.4.2.tgz#38dc8e658dec3809741eb3ef7bb0a47fe424232d"
-  integrity sha1-ONyOZY3sOAl0HrPve7Ckf+QkIy0=
-  dependencies:
-    anymatch "~3.1.1"
-    braces "~3.0.2"
-    glob-parent "~5.1.0"
-    is-binary-path "~2.1.0"
-    is-glob "~4.0.1"
-    normalize-path "~3.0.0"
-    readdirp "~3.4.0"
-  optionalDependencies:
-    fsevents "~2.1.2"
 
 chownr@^1.1.1, chownr@^1.1.2:
   version "1.1.4"
@@ -5546,26 +5531,7 @@ ini@^1.3.4, ini@^1.3.5, ini@~1.3.0:
   resolved "https://registry.npm.taobao.org/ini/download/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
   integrity sha1-7uJfVtscnsYIXgwid4CD9Zar+Sc=
 
-inquirer@7.3.2:
-  version "7.3.2"
-  resolved "https://registry.npm.taobao.org/inquirer/download/inquirer-7.3.2.tgz#25245d2e32dc9f33dbe26eeaada231daa66e9c7c"
-  integrity sha1-JSRdLjLcnzPb4m7qraIx2qZunHw=
-  dependencies:
-    ansi-escapes "^4.2.1"
-    chalk "^4.1.0"
-    cli-cursor "^3.1.0"
-    cli-width "^3.0.0"
-    external-editor "^3.0.3"
-    figures "^3.0.0"
-    lodash "^4.17.16"
-    mute-stream "0.0.8"
-    run-async "^2.4.0"
-    rxjs "^6.6.0"
-    string-width "^4.1.0"
-    strip-ansi "^6.0.0"
-    through "^2.3.6"
-
-inquirer@^7.0.0, inquirer@^7.1.0:
+inquirer@7.3.3, inquirer@^7.0.0, inquirer@^7.1.0:
   version "7.3.3"
   resolved "https://registry.npm.taobao.org/inquirer/download/inquirer-7.3.3.tgz#04d176b2af04afc157a83fd7c100e98ee0aad003"
   integrity sha1-BNF2sq8Er8FXqD/XwQDpjuCq0AM=
@@ -6077,10 +6043,10 @@ jschardet@^2.1.1:
   resolved "https://registry.npm.taobao.org/jschardet/download/jschardet-2.2.1.tgz#03b0264669a90c7a5c436a68c5a7d4e4cb0c9823"
   integrity sha1-A7AmRmmpDHpcQ2poxafU5MsMmCM=
 
-jsdom@16.3.0:
-  version "16.3.0"
-  resolved "https://registry.npm.taobao.org/jsdom/download/jsdom-16.3.0.tgz#75690b7dac36c67be49c336dcd7219bbbed0810c"
-  integrity sha1-dWkLfaw2xnvknDNtzXIZu77QgQw=
+jsdom@16.4.0:
+  version "16.4.0"
+  resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-16.4.0.tgz#36005bde2d136f73eee1a830c6d45e55408edddb"
+  integrity sha512-lYMm3wYdgPhrl7pDcRmvzPhhrGVBeVhPIqeHjzeiHN3DFmD1RBpbExbi8vU7BJdH8VAZYovR8DMt0PNNDM7k8w==
   dependencies:
     abab "^2.0.3"
     acorn "^7.1.1"
@@ -6452,12 +6418,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.npm.taobao.org/lodash.uniq/download/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@4.17.19:
-  version "4.17.19"
-  resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
-  integrity sha1-5I3e2+MLMyF4PFtDAfvTU7weSks=
-
-lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.16, lodash@^4.17.19, lodash@^4.17.3:
+lodash@4.17.20, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.3:
   version "4.17.20"
   resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha1-tEqbYpe8tpjxxRo1RaKzs2jVnFI=
@@ -9627,15 +9588,15 @@ tar@^6.0.2:
     mkdirp "^1.0.3"
     yallist "^4.0.0"
 
-tauri@^0.11.1:
-  version "0.11.1"
-  resolved "https://registry.npm.taobao.org/tauri/download/tauri-0.11.1.tgz#a49cd1412ad42c810f812942aabd14b85500231a"
-  integrity sha1-pJzRQSrULIEPgSlCqr0UuFUAIxo=
+tauri@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/tauri/-/tauri-0.12.0.tgz#0266befa124138ebb6eb5d8532371185eea37ae2"
+  integrity sha512-cF6o2KoFe4rdHeoHPDgp7RssUteejL9q1W/fKlOnhB3yDDilwF4TGzvbQkFhWiFd+KUfdO9U9YqvdAkKAl7L4g==
   dependencies:
     "@tauri-apps/tauri-inliner" "1.14.1"
     "@tauri-apps/toml" "2.2.4"
     chalk "4.1.0"
-    chokidar "3.4.1"
+    chokidar "3.4.2"
     cross-spawn "7.0.3"
     fast-glob "3.2.4"
     fs-extra "9.0.1"
@@ -9644,19 +9605,19 @@ tauri@^0.11.1:
     imagemin-optipng "8.0.0"
     imagemin-pngquant "9.0.0"
     imagemin-zopfli "7.0.0"
-    inquirer "7.3.2"
+    inquirer "7.3.3"
     is-png "2.0.0"
     is-reachable "4.0.0"
     isbinaryfile "4.0.6"
-    jsdom "16.3.0"
-    lodash "4.17.19"
+    jsdom "16.4.0"
+    lodash "4.17.20"
     minimist "1.2.5"
     ms "2.1.2"
     png2icons "2.0.1"
     read-chunk "3.2.0"
     semver "7.3.2"
     sharp "0.25.4"
-    webpack-merge "5.0.9"
+    webpack-merge "5.1.2"
     webpack-shell-plugin "0.5.0"
 
 temp-dir@^1.0.0:
@@ -10262,14 +10223,14 @@ vm-browserify@^1.0.1:
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
-vue-cli-plugin-tauri@~0.11.1:
-  version "0.11.1"
-  resolved "https://registry.npm.taobao.org/vue-cli-plugin-tauri/download/vue-cli-plugin-tauri-0.11.1.tgz#706dff1097a91326942cccd61920390019a0380f"
-  integrity sha1-cG3/EJepEyaULMzWGSA5ABmgOA8=
+vue-cli-plugin-tauri@~0.12.1:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/vue-cli-plugin-tauri/-/vue-cli-plugin-tauri-0.12.1.tgz#c6aaa03ae5127a1abd8b53528e275ba1a8d581ea"
+  integrity sha512-EMAc47xjlKGDYHDurj/JRylwMSmMmoBB6lrHe3ewmQuXoCFFEhvDmkFcbHyCJw02HWHIew24nRAW5nIiujIX9w==
   dependencies:
     "@vue/cli-shared-utils" "^4.1.1"
     execa "^3.4.0"
-    tauri "^0.11.1"
+    tauri "^0.12.0"
 
 vue-eslint-parser@^7.0.0:
   version "7.1.0"
@@ -10478,10 +10439,10 @@ webpack-log@^2.0.0:
     ansi-colors "^3.0.0"
     uuid "^3.3.2"
 
-webpack-merge@5.0.9:
-  version "5.0.9"
-  resolved "https://registry.npm.taobao.org/webpack-merge/download/webpack-merge-5.0.9.tgz?cache=0&sync_timestamp=1597767129938&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fwebpack-merge%2Fdownload%2Fwebpack-merge-5.0.9.tgz#d5e0e0ae564ae704836d747893bdd2741544bf31"
-  integrity sha1-1eDgrlZK5wSDbXR4k73SdBVEvzE=
+webpack-merge@5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/webpack-merge/-/webpack-merge-5.1.2.tgz#21dc1ed0e860c305cf5a07a48750f53a99750855"
+  integrity sha512-/slG0Kh0OKTf0zxdFJlhQHzv8bU9gUYVK5DkBjB3i/yoc1Xx4ADG0KITGO5S/6cqn2Ug43+8VR6Sz8daA/c+5g==
   dependencies:
     clone-deep "^4.0.1"
     wildcard "^2.0.0"
